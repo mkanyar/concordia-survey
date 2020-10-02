@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./styles.css">
+<html>
+    <body class="background-picture">
+        <main>
+       <h1 id="title"> </h1>
+       <p id="description">
+       </p>
+       <form id="survey-form">
+         <label id="name-label" for="name" >Name</label> 
+         <input placeholder="Enter your name" id="name">
+          <label id="email-label" for="email">Email</label>
+         <input placeholder="Enter your email" id="email" type="email">
+           <label id="number-label" for="number">Age(Optional)</label>
+         <input placeholder="Age" id="number" type="number" min="18" max="125">
+         <select>
+             <option disabled selected value>Select Current role</option>
+           <option> Undegraduate</option>
+           <option>Graduate</option>
+           <option>Professor</option>
+           <option>Staff</option>
+           <option>Other</option>
+         </select>
+         Would you recommend Concordia University to a friend?
+         <label for="definitely">Definitely </label>
+         <input id="definitely" type="radio" name="choice" value="definitely" checked>
+         <label for="maybe">Maybe </label>
+           <input id="maybe"type="radio" name="choice" value="maybe">
+         Not sure <label for="not-sure">No sure </label>
+           <input id="not-sure" type="radio" name="choice" value="not-sure">
+         What would you like to see improved?(check that all that apply)
+         <input id="projects" type="checkbox" value="projects">
+         <label for="projects">Academic Projects</label>
+         <input id="students-life" type="checkbox" value="students-life">
+         <label for="students-life">Students Life</label>
+          <input id="equipments" type="checkbox" value="equipments">
+         <label for="equipments">Equipments</label>
+         <input id="library" type="checkbox" value="library">
+         <label for="library">Library</label>
+         <input id="tutorials-labs" type="checkbox" value="tutorials-labs">
+         <label for="tutorials-labs">Tutorials/Labs</label>
+         <input id="bathrooms" type="checkbox" value="bathrooms">
+         <label for="bathrooms">Bathrooms</label>
+         <label for="comments">Any comments or suggestions  </label>
+         <textarea for="comments" placeholder="Enter you comment here..."></textarea>
+         
+         <input id="submit" type="submit">
+       </form>
+         </main>
+       </body>
+</html>
