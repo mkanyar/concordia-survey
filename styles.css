@@ -1,12 +1,24 @@
+body{
+    position: relative;
+}
+ .container{
+   display:grid;
+   justify-content: center;
+   grid-template-columns: 40vw;
+}
+.content{
+   display: block;
+    background-color:rgba(237, 207, 169,0.8);
+   border-radius: 15px;
+   position: relative;
+}
 html{ 
    
    position:relative;
    width: 100vw;
    height: 100vh;
-  
-  
 }
-    html::before{
+ html::before{
 content:"";
 position: absolute;
 top:0;
@@ -18,12 +30,35 @@ background:url('https://images.dailyhive.com/20190401091906/concordia-university
 background-size: cover;
 opacity: 0.3;
     }
-body{
-    position: relative;
+
+.survey-form{text-align: center;}
+.title{text-align: center;}
+input[type=text],select{
+    width:100%;
+    display:inline-block;
+    box-sizing: border-box;
+}
+textarea{max-width: 100%;
+    min-width:100%;
+    min-height:34%;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    margin-top:10px;
+    
+}
+input,label{
+    margin:10px 0;
+}
+input[type=submit]{
+    position:absolute;
+    right:10px;
+    bottom:0;
+    
+    display:block;
+
 }
 
-    
-  
+
   
 
   
