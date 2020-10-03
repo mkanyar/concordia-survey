@@ -7,10 +7,11 @@ body{
    grid-template-columns: 40vw;
 }
 .content{
-   display: block;
+   display: grid;
     background-color:rgba(237, 207, 169,0.8);
    border-radius: 15px;
    position: relative;
+   padding:0 10px;
 }
 html{ 
    
@@ -37,26 +38,37 @@ input[type=text],select{
     width:100%;
     display:inline-block;
     box-sizing: border-box;
+    
 }
 textarea{max-width: 100%;
     min-width:100%;
     min-height:34%;
     box-sizing: border-box;
-    margin-bottom:30px;
+    margin-bottom:40px;
     margin-top:10px;
     
 }
-input,label{
-    margin:10px 0;
-}
+
+
 input[type=submit]{
     position:absolute;
-    right:10px;
+   justify-self:center;
     bottom:0;
-    
+    left:0;
+    right:0;
+    background-color: #ff9a76;
     display:block;
 
 }
+input[type=checkbox]{
+    display:inline;
+    margin-right:10px;
+}
+label{
+    margin:10px 0;
+    align-self: center;
+}
+h1{text-align: center;}
 
 
   
