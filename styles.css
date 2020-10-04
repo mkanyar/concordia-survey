@@ -5,19 +5,20 @@ body{
    display:grid;
    justify-content: center;
    grid-template-columns: 40vw;
+   position: relative;
 }
 .content{
    display: grid;
     background-color:rgba(237, 207, 169,0.8);
    border-radius: 15px;
-   position: relative;
    padding:0 10px;
+  
 }
 html{ 
    
    position:relative;
    width: 100vw;
-   height: 100vh;
+   height: auto;
 }
  html::before{
 content:"";
@@ -36,22 +37,25 @@ opacity: 0.3;
 .title{text-align: center;}
 input[type=text],select{
     width:100%;
-    display:inline-block;
+    display:block;
     box-sizing: border-box;
+    
     
 }
 textarea{max-width: 100%;
     min-width:100%;
-    min-height:34%;
+    min-height: 30px;
     box-sizing: border-box;
     margin-bottom:40px;
     margin-top:10px;
+   resize:vertical;
+    
     
 }
 
 
 input[type=submit]{
-    position:absolute;
+    
    justify-self:center;
     bottom:0;
     left:0;
@@ -61,12 +65,14 @@ input[type=submit]{
 
 }
 input[type=checkbox]{
-    display:inline;
+    display:inline-block;
     margin-right:10px;
+    vertical-align: top;
 }
 label{
     margin:10px 0;
     align-self: center;
+   
 }
 h1{text-align: center;}
 
